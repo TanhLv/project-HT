@@ -73,7 +73,7 @@ $content_title = executeResult($sql);
         <div class="family__header container">
             <h2>Comprehensive Insurance For The Whole Family</h2>
             <div class="family__header--title">
-                <?=$data['title'];?>
+                
                 <?php
                     foreach ($content_title as $index => $title) {
                         echo $title['content'];

@@ -76,8 +76,7 @@ $content_title = executeResult($sql);
             
             <div class="mother__header">
                 
-                <div class="mother__title">
-                    <?=$data['title'];?>
+                <div class="mother__title">                    
                     <?php
                         foreach ($content_title as $index => $title) {
                             echo $title['content'];
