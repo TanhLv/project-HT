@@ -1,5 +1,5 @@
 <?php
-require_once('dbhelper.php');
+require_once('./db/dbhelper.php');
 
 $id = $_GET['id'];
 

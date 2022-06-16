@@ -1,3 +1,23 @@
+<?php
+session_start();
+require_once('./db/dbhelper.php');
+
+if(!empty($_POST)){
+	$fullname = $_POST['fullname'];
+	$email = $_POST['email'];
+	$phone = $_POST['phone'];
+	$subname = $_POST['subname'];
+	$note = $_POST['note'];
+	$creted_at = date_create('now', timezone_open('Asia/Ho_Chi_Minh'))->format('Y-m-d');
+
+	$sql = "insert into feedback(fullname, email, phoneNo, subject_name, note, created_at, status)
+            values
+            ('$fullname', '$email', '$phone', '$subname', '$note', '$creted_at', 'Unread')";
+	execute ($sql);
+
+}
+?>
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -85,21 +105,20 @@
                         <form action="" method="post" class="footer__form">
                             <div class="contact__footer--phone">
                                 <span class="span__icon"><i class="uil uil-user contact__icon"></i></span>
-                                <input type="text" class="contact__footer--phoneNo" placeholder="Full Name" required>
+                                <input type="text" class="contact__footer--phoneNo" placeholder="Full Name" required name="fullname">
                             </div>
                             
                             <div class="contact__footer--phone">
                                 <i class="uil uil-phone contact__icon"></i>
-                                <input type="text" class="contact__footer--phoneNo" placeholder="Phone number" required>
-                            </div>
-
-                            <div class="contact__footer--phone">
-                                <i class="uil uil-user contact__icon"></i>
-                                <input type="text" class="contact__footer--phoneNo" placeholder="City" required>
+                                <input type="text" class="contact__footer--phoneNo" placeholder="Phone number" required name="phone">
                             </div>
                             
                             <div class="contact__footer--phone">
+<<<<<<< HEAD
                                 <textarea name="" id="" cols="30" rows="10" placeholder="At what time can we contact you? Who are you looking to buy insurance for? ..."></textarea>
+=======
+                                <textarea name="note" id="" cols="30" rows="10">At what time can we contact you? Who are you looking to buy insurance for? ...</textarea>
+>>>>>>> 7fe410b5b00a31c517ea9fbd8a9e6330846aed5e
                             </div>
 
                             <div>

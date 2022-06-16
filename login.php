@@ -1,7 +1,7 @@
 <?php
 session_start();
 
-require_once('dbhelper.php');
+require_once('./db/dbhelper.php');
 
 if(!empty($_POST)) {
 	$email = $_POST['email'];
