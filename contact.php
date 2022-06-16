@@ -52,36 +52,66 @@
 
     
 <main>
-   <div class="center">
-    <div class="" id="banner">
-        <img src="asstes/img/logo2.png" alt="">
-    </div>
+    <div class="center">
+        <div class="" id="banner">
+            <img src="asstes/img/logo2.png" alt="">
+        </div>
 
         <div class="container">
-            <div class="left">
-                <h2 class="contact__contact--title ">CONTACT</h2>
-                <div class="border__contact--bottom"></div>
-                <h3 class="contact__insurance--title">Insurance consulting call center</h3>
-                <p class="contact__title--full">Consultants: <a href="contact.php" class="link link__phone">0339202500</a></p>
-                <div class="border__contact--bottom2"></div>
-                <p class="contact__title--full">Email: <a href="https://mail.google.com/mail/u/0/?tab=rm&ogbl#inbox" class="link link__email">viet04092002@gmail.com</a></p>
-                <div class="border__contact--bottom2"></div>
-                <p class="contact__title--full">Address: <span class="link link__address">285 Đội Cấn - Ba Đình -Hà Nội.</span></p>
-                <div class="border__contact--bottom2"></div>
-                <p class="contact__title--full">Website: <a href="#"></a></p>
+            <div class="container_contact">
+                <div class="left">
+                    <h2 class="contact__contact--title ">CONTACT</h2>
+                    <div class="border__contact--bottom"></div>
+                    <h3 class="contact__insurance--title">Insurance consulting call center</h3>
+                    <p class="contact__title--full">Consultants: <a href="contact.php" class="link link__phone">0339202500</a></p>
+                    <div class="border__contact--bottom2"></div>
+                    <p class="contact__title--full">Email: <a href="https://mail.google.com/mail/u/0/?tab=rm&ogbl#inbox" class="link link__email">viet04092002@gmail.com</a></p>
+                    <div class="border__contact--bottom2"></div>
+                    <p class="contact__title--full">Address: <span class="link link__address">285 Đội Cấn - Ba Đình -Hà Nội.</span></p>
+                    <div class="border__contact--bottom2"></div>
+                    <p class="contact__title--full">Website: <a href="#"></a></p>
 
-                <p class="contact__title--full p">You need to know more detailed information about product packages related 
-                    to Dai-ichi Life insurance. Please contact directly via <p class="contact__title--full">Hotline: <span class="p__tow">0919661950.</span></p>
-            </div>
-        </div>
+                    <p class="contact__title--full p">You need to know more detailed information about product packages related 
+                        to Dai-ichi Life insurance. Please contact directly via <p class="contact__title--full">Hotline: <span class="p__tow">0919661950.</span></p>
+                </div>
 
-        <div class="address__contact-map container">
-            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3723.9244038028505!2d105.81684051476337!3d21.035710585994618!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3135ab145bf89bd7%3A0xd94a869b494c04b6!2zMjg1IMSQ4buZaSBD4bqlbiwgVsSpbmggUGjDuiwgQmEgxJDDrG5oLCBIw6AgTuG7mWkgMTAwMDAwLCBWaeG7h3QgTmFt!5e0!3m2!1svi!2s!4v1654454681595!5m2!1svi!2s" width="930" height="400" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
-        </div>
-        
-        <div class="right">
-            <div class="from__register">
                 
+                
+                <div class="right">
+                    <div class="from__register">
+                        <form action="" method="post" class="footer__form">
+                            <div class="contact__footer--phone">
+                                <span class="span__icon"><i class="uil uil-user contact__icon"></i></span>
+                                <input type="text" class="contact__footer--phoneNo" placeholder="Full Name" required>
+                            </div>
+                            
+                            <div class="contact__footer--phone">
+                                <i class="uil uil-phone contact__icon"></i>
+                                <input type="text" class="contact__footer--phoneNo" placeholder="Phone number" required>
+                            </div>
+
+                            <div class="contact__footer--phone">
+                                <i class="uil uil-user contact__icon"></i>
+                                <input type="text" class="contact__footer--phoneNo" placeholder="City" required>
+                            </div>
+                            
+                            <div class="contact__footer--phone">
+                                <textarea name="" id="" cols="30" rows="10">At what time can we contact you? Who are you looking to buy insurance for? ...</textarea>
+                            </div>
+
+                            <div>
+                                <button class="btn__success">
+                                    Get a free consultation
+                                </button>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+
+            </div>
+            
+            <div class="address__contact-map container">
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3723.9244038028505!2d105.81684051476337!3d21.035710585994618!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3135ab145bf89bd7%3A0xd94a869b494c04b6!2zMjg1IMSQ4buZaSBD4bqlbiwgVsSpbmggUGjDuiwgQmEgxJDDrG5oLCBIw6AgTuG7mWkgMTAwMDAwLCBWaeG7h3QgTmFt!5e0!3m2!1svi!2s!4v1654454681595!5m2!1svi!2s" width="930" height="400" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
             </div>
         </div>
    </div> 
