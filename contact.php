@@ -111,7 +111,7 @@ if(!empty($_POST)){
                             </div>
                             
                             <div class="contact__footer--phone">
-                                <textarea name="note" id="" cols="30" rows="10">At what time can we contact you? Who are you looking to buy insurance for? ...</textarea>
+                                <textarea name="note" id="" cols="30" rows="10"></textarea>
                             </div>
 
                             <div>
