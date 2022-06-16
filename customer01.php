@@ -15,7 +15,7 @@
 <div class="wrapper">
 <header>
         <div class="inner__header">
-            <img src="asstes/img/dai-ichi-life-logo.png" alt="" class="header__img">
+            <a href="index.php"><img src="asstes/img/dai-ichi-life-logo.png" alt="" class="header__img"></a>
             <div>
                 <ul id="main-menu" style="margin-right: 118px;">
                     <li class="menu__item"><a href="index.php" class="menu__link">Home</a></li>
