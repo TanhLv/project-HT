@@ -596,6 +596,11 @@ ul#main-menu{
     padding-right: 43px;
 }
 
+.contact__footer--phone textarea{
+    padding: 10px;
+    display: block;
+}
+
 .contact__footer--phoneNo{
     padding-right: 100px;
     padding-top: 10px;
@@ -675,7 +680,7 @@ ul#main-menu{
 
 .right{
     flex: 1;
-    margin-left: 250px;
+    margin-left: 120px;
 }
 
 .contact__contact--title{

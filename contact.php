@@ -35,7 +35,7 @@ if(!empty($_POST)){
 <div class="wrapper">
 <header>
         <div class="inner__header container ">
-            <img src="asstes/img/dai-ichi-life-logo.png" alt="" class="header__img">
+            <a href="index.php"><img src="asstes/img/dai-ichi-life-logo.png" alt="" class="header__img"></a>
             <div>
                 <ul id="main-menu">
                     <li class="menu__item"><a href="index.php" class="menu__link">Home</a></li>
@@ -93,8 +93,11 @@ if(!empty($_POST)){
 
                     <p class="contact__title--full p">You need to know more detailed information about product packages related 
                         to Dai-ichi Life insurance. Please contact directly via <p class="contact__title--full">Hotline: <span class="p__tow">0919661950.</span></p>
+                    
+                    <div class="address__contact-map container">
+                        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3723.9244038028505!2d105.81684051476337!3d21.035710585994618!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3135ab145bf89bd7%3A0xd94a869b494c04b6!2zMjg1IMSQ4buZaSBD4bqlbiwgVsSpbmggUGjDuiwgQmEgxJDDrG5oLCBIw6AgTuG7mWkgMTAwMDAwLCBWaeG7h3QgTmFt!5e0!3m2!1svi!2s!4v1654454681595!5m2!1svi!2s" width="930" height="400" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                    </div>
                 </div>
-
                 
                 
                 <div class="right">
@@ -125,9 +128,7 @@ if(!empty($_POST)){
 
             </div>
             
-            <div class="address__contact-map container">
-                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3723.9244038028505!2d105.81684051476337!3d21.035710585994618!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3135ab145bf89bd7%3A0xd94a869b494c04b6!2zMjg1IMSQ4buZaSBD4bqlbiwgVsSpbmggUGjDuiwgQmEgxJDDrG5oLCBIw6AgTuG7mWkgMTAwMDAwLCBWaeG7h3QgTmFt!5e0!3m2!1svi!2s!4v1654454681595!5m2!1svi!2s" width="930" height="400" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
-            </div>
+            
         </div>
    </div> 
 </main>
