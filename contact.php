@@ -8,12 +8,14 @@ if(!empty($_POST)){
 	$phone = $_POST['phone'];
 	$subname = $_POST['subname'];
 	$note = $_POST['note'];
-	$creted_at = date_create('now', timezone_open('Asia/Ho_Chi_Minh'))->format('Y-m-d');
+	$creted_at = date_create('now', timezone_open('Asia/Ho_Chi_Minh'))->format('Y-m-d h:m:s');
 
 	$sql = "insert into feedback(fullname, email, phoneNo, subject_name, note, created_at, status)
             values
             ('$fullname', '$email', '$phone', '$subname', '$note', '$creted_at', 'Unread')";
 	execute ($sql);
+
+    header('Location: contact.php');
 
 }
 ?>

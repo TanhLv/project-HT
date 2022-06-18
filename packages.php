@@ -1,3 +1,10 @@
+<?php
+    require_once('./db/dbhelper.php');
+    $sql = "select * from product";
+
+    $data = executeResult($sql);
+?>
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -34,6 +41,7 @@
                                 <li class="menu__child--item">
                                     <a href="baby.php" class="menu__link--child">Health Care Insurancey</a>
                                 </li>
+                                
                                 
                             </ul>
                         </div>
@@ -72,61 +80,22 @@
         </div>
 
         <div class="packages__main container">
-            <div class="packages__main--01">
-                <div class="packages__main--img">
-                    <a href="famyli.php"><img src="asstes/img/01.png" alt="" class="img__packages"></a>
-                </div>
-                <div class="packages__main--title">
-                    <a href="famyli.php"><h3>Insurance for the whole family</h3></a>
-                    <p>Health insurance pays 100% of hospital fees (both cancer and critical illness). 
-                       Protect the whole family in a single contract</p>
-                </div>
-                <div class="packages__button">
-                    <a href="famyli.php"><button class="btn__success" style="margin-top: 32px;">See details</button></a>
-                </div>
-            </div>
-
-            <div class="packages__main--01">
-                <div class="packages__main--img">
-                    <a href="mother&baby.php"><img src="asstes/img/02.jpg" alt="" class="img__packages"></a>
-                </div>
-                <div class="packages__main--title">
-                    <a href="mother&baby.php"><h3>Insurance for mother and baby</h3></a>
-                    <p>Protect mother and baby from birth. Excluding lung and 
-                    bronchial diseases. Payment guarantee at international hospitals</p>
-                </div>
-                <div class="packages__button">
-                    <a href="mother&baby.php"><button class="btn__success" style="margin-top: 32px;">See details</button></a>
-                </div>
-            </div>
-
-            <div class="packages__main--01">
-                <div class="packages__main--img">
-                    <a href="insurance.php"><img src="asstes/img/03.png" alt="" class="img__packages"></a>
-                </div>
-                <div class="packages__main--title">
-                    <a href="insurance.php"><h3>Independent insurance for your baby</h3></a>
-                    <p>Cost-effective insurance package but still comprehensively protect your baby, 
-                        take care of your baby with the most advanced medical services</p>
-                </div>
-                <div class="packages__button">
-                    <a href="insurance.php"><button class="btn__success" >See details</button></a>
-                </div>
-            </div>
-
-            <div class="packages__main--01">
-                <div class="packages__main--img">
-                    <a href="baby.php"><img src="asstes/img/04.png" alt="" class="img__packages"></a>
-                </div>
-                <div class="packages__main--title">
-                    <a href="baby.php"><h3>Health care insurance</h3></a>
-                    <p>Full payment of hospital fees at all hospitals including public and 
-                        international hospitals. Payment guarantee at major institutes</p>
-                </div>
-                <div class="packages__button">
-                    <a href="baby.php"><button class="btn__success" style="margin-top: 60px;">See details</button></a>
-                </div>
-            </div>
+            <?php
+                foreach ($data as $index => $product) {
+                    echo '<div class="packages__main--01">
+                            <div class="packages__main--img">
+                                <a href="'.$product['slug'].'"><img src="'.$product['thumbnail'].'" alt="" class="img__packages"></a>
+                            </div>
+                            <div class="packages__main--title">
+                                <a href="'.$product['slug'].'"><h3>'.$product['title'].'</h3></a>
+                                <p>'.$product['description'].'</p>
+                            </div>
+                            <div class="packages__button">
+                                <a href="'.$product['slug'].'"><button class="btn__success" style="margin-top: 32px;">See details</button></a>
+                            </div>
+                        </div>';
+                }
+            ?>
         </div>
     </div>
 </main>

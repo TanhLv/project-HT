@@ -4,11 +4,24 @@ require_once('./db/dbhelper.php');
 
 if(!empty($_POST)){
 	$title = $_POST['title'];
-	$thumbnail = $_POST['thumbnail'];
+	$image = $_FILES ['img']['name'];
+	$image_tmp_name = $_FILES['img']['tmp_name'];
+	$image_folder = './asstes/img/product/'. $image;
 	$description = $_POST['description'];
 	$price = $_POST['price'];
 
-	$sql = "insert into product( title, thumbnail, description, price) values('$title', '$thumbnail', '$description', '$price')";
+	if ($_FILES['img']['error']>0){
+		$this ->error = 'Upload file failed';
+		header('Location: product.php');
+		die();
+	}
+
+	if (!is_file($image_folder)){
+		move_uploaded_file($image_tmp_name, $image_folder);
+	}
+
+
+	$sql = "insert into product( title, thumbnail, description, price) values('$title', '$image_folder', '$description', '$price')";
 	execute ($sql);
 
 	header('Location: product.php');
@@ -30,7 +43,7 @@ if(!empty($_POST)){
   </style>
 </head>
 <body>
-<form method="post">
+<form method="post" enctype="multipart/form-data" >
 	<div class="card">
 		<div class="card-header bg-info">
 			<h1>ADD LIST</h1>
@@ -42,7 +55,7 @@ if(!empty($_POST)){
 			</div>
 			<div class="form-group">
 				<label>Thumbail: </label>
-				<input required type="text" name="thumbnail" class="form-control">
+				<input required type="file" accept="image/png, image/jpg, image/jpeg" name="img" class="form-control">
 			</div>
 			<div class="form-group">
 				<label>Description: </label>

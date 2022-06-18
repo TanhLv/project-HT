@@ -53,7 +53,7 @@ foreach ($productList as $item) {
 	<tr>
 					<td>'.(++$index).'</td>
 					<td>'.($item['title']).'</td>
-					<td>'.($item['thumbnail']).'</td>
+					<td><img src="'.($item['thumbnail']).'" style="width:100px;" alt=""></td>
 					<td>'.($item['description']).'</td>
 					<td>'.($item['price']).'</td>
 					<td>
@@ -67,6 +67,7 @@ foreach ($productList as $item) {
 }
 ?>
 			</tbody>
+			
 		</table>
 	</div>
 </div>
