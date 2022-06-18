@@ -4,15 +4,13 @@ require_once('./db/dbhelper.php');
 
 if(!empty($_POST)){
 	$fullname = $_POST['fullname'];
-	$email = $_POST['email'];
 	$phone = $_POST['phone'];
-	$subname = $_POST['subname'];
 	$note = $_POST['note'];
 	$creted_at = date_create('now', timezone_open('Asia/Ho_Chi_Minh'))->format('Y-m-d h:m:s');
 
-	$sql = "insert into feedback(fullname, email, phoneNo, subject_name, note, created_at, status)
+	$sql = "insert into feedback(fullname, phoneNo, note, created_at, status)
             values
-            ('$fullname', '$email', '$phone', '$subname', '$note', '$creted_at', 'Unread')";
+            ('$fullname', '$phone','$note', '$creted_at', 'Unread')";
 	execute ($sql);
 
     header('Location: contact.php');
