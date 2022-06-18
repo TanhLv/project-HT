@@ -79,7 +79,7 @@ if(!empty($_POST)){
             <img src="asstes/img/logo2.png" alt="">
         </div>
 
-        <div class="container">
+        <!-- <div class="container"> -->
             <div class="container_contact">
                 <div class="left">
                     <h2 class="contact__contact--title ">CONTACT</h2>
@@ -104,34 +104,39 @@ if(!empty($_POST)){
                 
                 <div class="right">
                     <div class="from__register">
-                        <form action="" method="post" class="footer__form">
-                            <div class="contact__footer--phone">
-                                <span class="span__icon"><i class="uil uil-user contact__icon"></i></span>
-                                <input type="text" class="contact__footer--phoneNo" placeholder="Full Name" required name="fullname">
-                            </div>
-                            
-                            <div class="contact__footer--phone">
-                                <i class="uil uil-phone contact__icon"></i>
-                                <input type="text" class="contact__footer--phoneNo" placeholder="Phone number" required name="phone">
-                            </div>
-                            
-                            <div class="contact__footer--phone">
-                                <textarea name="note" id="" cols="30" rows="10"></textarea>
-                            </div>
+                        <div class="card">
+                            <div class="card-header">Sign up for a consultation</div>
+                            <div class="card-body">
+                                <form action="" method="post" class="footer__form">
+                                    <div class="contact__footer--phone">
+                                        <span class="span__icon"><i class="uil uil-user contact__icon"></i></span>
+                                        <input type="text" class="contact__footer--phoneNo form-control" placeholder="Full Name" required name="fullname">
+                                    </div>
+                                    
+                                    <div class="contact__footer--phone">
+                                        <i class="uil uil-phone contact__icon"></i>
+                                        <input type="text" class="contact__footer--phoneNo form-control" placeholder="Phone number" required name="phone">
+                                    </div>
+                                    
+                                    <div class="contact__footer--phone">
+                                        <textarea style="width: 100%;" class="form-control" name="note" id="" cols="30" rows="10"></textarea>
+                                    </div>
 
-                            <div>
-                                <button class="btn__success">
-                                    Get a free consultation
-                                </button>
+                                    <div>
+                                        <button class="btn__success">
+                                            Get a free consultation
+                                        </button>
+                                    </div>
+                                </form>
                             </div>
-                        </form>
+                        </div>
                     </div>
                 </div>
 
             </div>
             
             
-        </div>
+        <!-- </div> -->
    </div> 
 </main>
 
