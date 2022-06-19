@@ -1161,6 +1161,7 @@ footer .contact__footer--phone {
     border: #f2f2f2 1px solid;
     height: 490px;
     background-color: #f2f2f2;
+
 }
 
 .packages__main--img{
@@ -1189,11 +1190,8 @@ footer .contact__footer--phone {
 }
 
 .packages__button{
+    position: absolute;
     text-align: center;
-    justify-items: center;
-    margin-left: 28px;
-    padding: 2px;
-    margin-bottom: 200px;
 }
 
 .family__border{

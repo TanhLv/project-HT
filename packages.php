@@ -91,7 +91,7 @@
                                 <p>'.$product['description'].'</p>
                             </div>
                             <div class="packages__button">
-                                <a href="'.$product['slug'].'"><button class="btn__success" style="margin-top: 32px;">See details</button></a>
+                                <a href="'.$product['slug'].'"><button class="btn__success">See details</button></a>
                             </div>
                         </div>';
                 }
